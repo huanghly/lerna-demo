@@ -1,0 +1,21 @@
+{
+    "version": "independent",
+    "npmClient": "yarn",
+    "useWorkspaces": true,
+    "changelog": {
+      "repo": "MrXujiang/best-cps",
+      "cacheDir": ".changelog"
+    },
+    "ignoreChanges": [
+      "**/*.md",
+      "**/*.test.ts",
+      "**/*.e2e.ts",
+      "**/demos/**",
+      "**/fixtures/**",
+      "**/dist/**",
+      "**/lib/**",
+      "**/es/**",
+      "**/test/**"
+    ]
+  }
+  
