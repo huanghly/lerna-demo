@@ -1,7 +1,7 @@
 import { readdirSync } from 'fs';
 import chalk from 'chalk';
 import { join } from 'path';
-
+const repo = 'lerna-demo';
 const headPkgList = [];
 // utils must build before core
 // runtime must build before renderer-react
@@ -27,7 +27,7 @@ const isProduction = process.env.NODE_ENV === 'production';
 const isDeploy = process.env.SITE_DEPLOY === 'TRUE';
 
 export default {
-  title: 'XuComponents',
+  title: 'lerna-demo',
   mode: 'site',
   logo: 'https://gw.alipayobjects.com/zos/antfincdn/upvrAjAPQX/Logo_Tech%252520UI.svg',
   extraBabelPlugins: [
@@ -153,4 +153,6 @@ export default {
   webpack5: {},
   mfsu: !isDeploy ? {} : undefined,
   fastRefresh: {},
+  base: `/${repo}/`,
+  publicPath: `/${repo}/`,
 };

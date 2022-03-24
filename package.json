@@ -1,6 +1,8 @@
 {
   "private": true,
+  "name": "docs-demo",
   "license": "MIT",
+  "version": "1.0.0",
   "workspaces": [
     "packages/*"
   ],
